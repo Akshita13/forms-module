@@ -1,0 +1,59 @@
+<div class="container">
+<h1>Ticket Booking</h1>
+<form>
+  <div>
+    <label for="from-station">From</label>
+    <select>
+        <option disabled >select station
+          </option>
+      <option *ngFor="let d of fromstation" >{{d}}
+        </option>
+      </select>
+  </div>
+  <br>
+
+  <div>
+    <label for="tostation">To</label>
+    <select>
+      <option disabled>select station</option>
+      <option *ngFor="let d of tostation">{{d}}</option>
+    </select>
+   
+  </div>
+  <br>
+
+  <div>
+    <label for="date">date</label>
+    <input type="date"  name="date">
+  </div>
+  <br>
+
+  <div>
+    <label for="train-no">train-no</label>
+    <input type="number"  name="train-no">
+  </div>
+  <br>
+  <div>
+    <label for="no_of_tickets">num-of-tickets</label>
+    <select>
+        <option disabled>select no of tickets</option>
+          <option *ngFor="let d of no_of_tickets">{{d}}</option>
+      </select>
+    
+  </div>
+  <br>
+  <div>
+    <label for="type">class</label>
+    <select>
+        <option disabled>select class</option>
+        <option *ngFor="let d of type">{{d}}</option>
+      </select>
+ 
+  </div>
+  <br>
+  <div>
+    <input type="submit" class="" name="submit">
+  </div>
+  <br>
+</form>
+</div>
